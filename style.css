@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(7, 8, 17, 0.949);
+
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  font-size: 25px;
+}
+h1 {
+  font-size: 6.5vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(100, 191, 247);
+}
+h2 {
+  font-size: 6vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(152, 230, 254);
+}
+
+.container {
+  margin-top: 7lvh;
+  width: 70lvw;
+  height: 85lvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+/*below div is for text that is to typed by the user*/
+.text {
+  font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 70lvw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh;
+}
+.sucess {
+  color: rgb(19, 247, 243);
+}
+.failure {
+  color: rgb(234, 53, 89);
+}
+/*Every letter is listed individually in the ul tag*/
+ul {
+  list-style: none;
+  display: flex;
+  color: rgb(19, 232, 247);
+  justify-content: center;
+  align-items: center;
+}
+li {
+  border: 1px solid rgb(16, 97, 124);
+  padding: 2vh 1.6vw;
+  border-radius: 0.8rem;
+} /*1rem 1.5rem;*/
+.first-row {
+  margin-top: 5vh;
+  width: 60lvw;
+  height: 10vh;
+  gap: 1vw;
+}
+.second-row {
+  width: 50lvw;
+  height: 10vh;
+  gap: 1.1vw;
+}
+.third-row {
+  width: 45lvw;
+  gap: 1.3vw;
+  height: 10vh;
+}
+.fourth-row {
+  width: 30vw;
+  margin-top: 0.5vh;
+  height: 10vh;
+}
+.space {
+  padding: 2vh 11vw;
+}
+.glow {
+  background: rgb(16, 97, 124);
+  opacity: 50%;
+  transition: background 0.3s;
+}
