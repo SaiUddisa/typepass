@@ -1,11 +1,11 @@
 async function getQuote() {
-  const respones = await fetch(
-    "https://official-joke-api.appspot.com/random_joke"
-  );
-  quoteObj = await respones.json();
-  let quote = quoteObj.setup + " " + quoteObj.punchline;
-  // let quote = "Nothing goes as planned in this accursed world!!";
-  if (quote.length > 500) {
+  // const respones = await fetch(
+  //   "https://official-joke-api.appspot.com/random_joke"
+  // );
+  // quoteObj = await respones.json();
+  // let quote = quoteObj.setup + " " + quoteObj.punchline;
+  let quote = "Nothing goes as planned in this accursed world!! This quote is said by Madara uchiha also known as the ghost of uchiha";
+  if (quote.length > 2000) {
     getQuote();
   }
   let paragraphTag = document.querySelector("p");
@@ -25,7 +25,7 @@ async function getQuote() {
     typedKey = event.key;
 
     if (typedKey === quote[index]) {
-      document.querySelector(`.span${index}`).classList.add("sucess");
+      document.querySelector(`.span${index}`).classList.add("success");
       index++;
       //for coorecting mistakenly typed words
     } else if (typedKey == "Backspace") {
@@ -35,7 +35,7 @@ async function getQuote() {
           mistakes--;
         }
       }
-      document.querySelector(`.span${index}`).classList.remove("sucess");
+      document.querySelector(`.span${index}`).classList.remove("success");
       document.querySelector(`.span${index}`).classList.remove("failure");
     } else if (
       typedKey == "Shift" ||

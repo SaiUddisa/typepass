@@ -26,7 +26,7 @@ h2 {
 }
 
 .container {
-  margin-top: 7lvh;
+  margin-top: 7vh;
   width: 70lvw;
   height: 85lvh;
   position: relative;
@@ -44,9 +44,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9vh;
+  margin-top: 7vh;
+  margin-bottom:2vh ;
 }
-.sucess {
+.success {
   color: rgb(19, 247, 243);
 }
 .failure {
@@ -60,34 +61,49 @@ ul {
   justify-content: center;
   align-items: center;
 }
-li {
+li{
   border: 1px solid rgb(16, 97, 124);
   padding: 2vh 1.6vw;
   border-radius: 0.8rem;
 } /*1rem 1.5rem;*/
+
 .first-row {
-  margin-top: 5vh;
+  margin-bottom: 1vh;
   width: 60lvw;
   height: 10vh;
-  gap: 1vw;
+  gap: 1.5vw;
 }
+
 .second-row {
-  width: 50lvw;
+  
+  width: 60lvw;
   height: 10vh;
-  gap: 1.1vw;
+  margin-bottom: 0.7vh;
+  gap: 1.5vw;
 }
 .third-row {
-  width: 45lvw;
-  gap: 1.3vw;
+  width: 50lvw;
   height: 10vh;
+  margin-bottom: 0.7vh;
+  gap: 1.4vw;
 }
 .fourth-row {
-  width: 30vw;
-  margin-top: 0.5vh;
+  width: 45lvw;
+  gap: 1.4vw;
+  margin-bottom: 0.7vh;
   height: 10vh;
 }
+.fifth-row {
+  width: 30vw;
+  margin-top: 0.7vh;
+  height: 10vh;
+}
+
 .space {
-  padding: 2vh 11vw;
+  padding: 2vh 12vw;
+}
+.shift{
+  
 }
 .glow {
   background: rgb(16, 97, 124);
