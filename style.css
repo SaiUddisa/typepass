@@ -104,7 +104,9 @@ li{
 }
 .Backspace , .Shift {
 
-  max-height: 10vh;
+  max-height: 9.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
   
 }
 
