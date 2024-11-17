@@ -65,16 +65,15 @@ async function getQuote() {
     }
 
     if (index >= quote.length) {
-      // if (
-      //   confirm(`You made  mistakes ${mistakes} times.Press OK to try again`)
-      // ) {
-      //   location.reload();
-      // }
+     
 
       let correct = quote.length - mistakes;
       let accuracy = Math.round((correct / quote.length) * 100);
 
       paragraphTag.innerHTML = `<h2> Accuracy : ${accuracy}% </h2>`;
+      setTimeout(() => {
+        location.reload();
+      },1000 );
     }
 
   });
@@ -155,18 +154,16 @@ async function getQuote() {
         index++;
       }
 
-      // if (index >= quote.length) {
-      //   // if (
-      //   //   confirm(`You made  mistakes ${mistakes} times.Press OK to try again`)
-      //   // ) {
-      //   //   location.reload();
-      //   // }
+      if (index >= quote.length) {
+      
+        let correct = quote.length - mistakes;
+        let accuracy = Math.round((correct / quote.length) * 100);
 
-      //   let correct = quote.length - mistakes;
-      //   let accuracy = Math.round((correct / quote.length) * 100);
-
-      //   paragraphTag.innerHTML = `<h2> Accuracy : ${accuracy}% </h2>`;
-      // }
+        paragraphTag.innerHTML = `<h2> Accuracy : ${accuracy}% </h2>`;
+        setTimeout(() => {
+          location.reload();
+        },4000 );
+      }
 
 
     });

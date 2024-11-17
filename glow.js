@@ -8,7 +8,7 @@ document.addEventListener("keydown", (event) => {
       keyPressed.classList.remove("glow");
     }, 300);
   }else if(key == 'Shift'){
-    const keyPressed = document.querySelector(`.shift`);
+    const keyPressed = document.querySelector(`.Shift`);
     keyPressed.classList.add("glow");
     setTimeout(() => {
       keyPressed.classList.remove("glow");

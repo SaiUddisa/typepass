@@ -102,9 +102,12 @@ li{
 .space {
   padding: 2vh 12vw;
 }
-.shift{
+.Backspace , .Shift {
+
+  max-height: 10vh;
   
 }
+
 .glow {
   background: rgb(16, 97, 124);
   opacity: 50%;
